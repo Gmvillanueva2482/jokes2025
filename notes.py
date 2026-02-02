@@ -10,4 +10,3 @@
 # Utilize selection (e.g., if/else statements).
 # Use iteration (e.g., loops like for or while).
 # Take different paths based on parameter values.
-nootes

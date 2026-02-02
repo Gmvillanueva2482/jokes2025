@@ -38,8 +38,8 @@ if joke == "finished":
 
 #------------------------------------------------------------
 # Part 1
-# Missing Requirements
-#A List: Your program must use at least one list or array to manage data. Currently, you use individual variables.
+# Missing Requirements:
+# A List: Your program must use at least one list or array to manage data. Currently, you use individual variables.
 # You should store your jokes in a list and access them there.
 # Student-Developed Procedure: You must define at least one named procedure (function) that takes at least one parameter. 
 # Within your procedure, you must have an algorithm that includes sequencing, selection, and iteration all working together to achieve a result.                 
@@ -47,6 +47,7 @@ if joke == "finished":
 
 # IT COULD BE FURTHER SIMFLIFIED INTO THIS TO MAKEIT USE LESS SPACE AND FOR IT TO BE MORE EFFICIENT AND ORGANIZED
 # It could be further simplified into this to make use less space and for it to be more efficient and organized
+
 
 # Part 2 
 # Missing            #   function ---- it doesn't have a fucntion(so no function)
@@ -59,13 +60,13 @@ if joke == "finished":
 
 
 
-# Part 3 : now we willb impoving it to reach the needed requirements
+# Part 3 : now we will be impoving it to reach the needed requirements
 
 joke = input("Do you want to hear a joke? ")
 if joke == "no":
     print("Okay suit yourself!")
 while joke == "yes": 
-    print("Great, Let's Play") #hi
+    print("Great, Let's Play") 
     question = input("Do you want to hear a joke about robbers, tanks, or pencils? ")
     if question == "robbers":
         input("Knock Knock ")
