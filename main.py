@@ -106,16 +106,25 @@ def tell_joke(joke_lines):
         user = input(line + " ") 
     print()                      
 
-def end_game():
-    rate = int(input("Please rate our game 1–10: "))
-    final_score = rate * 10
-    print(str(final_score) + "% satisfaction rate")
+def end_game(final_score):
+    for rate in range(1, 11):
+        if rate == final_score:
+            final_score = rate * 10
+            print(str(final_score) + "% satisfaction rate")
+            break
+    else:
+        print("Invalid rating.")
 
+    
+    
+    
     friend = input("Would you recommend this game to a friend? ")
     if friend in ["yes", "maybe"]:
         print("Thanks, we appreciate it.")
     else:
         print("Sorry you did not enjoy it.")
+
+
 
 joke = input("Do you want to hear a joke? ")
 
@@ -135,5 +144,5 @@ while joke == "yes":
 
     joke = input("Do you want to hear another joke or are you finished? ")
 
-if joke == "finished":
-    end_game()
+if joke == "No" or joke == "finished":
+    end_game(final_score=int(input("Please rate our game 1-10! ")))
